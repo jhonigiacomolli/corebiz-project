@@ -1,15 +1,21 @@
 body {
-  margin: 0;
-  font-family: 'Nunito', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-
+  
+  --font-primary: 'Nunito', sans-serif;
+  --font-secundary: 'Lato', sans-serif;
+  
   --boxed-size: 1160px;
   
   --white:#ffffff;
   --black: #000000;
   --red: #F8475F; 
+  --red-secondary: #D7182A; 
   --text-primary: #7A7A7A;
+  --text-secondary: #585858;
+ 
+  margin: 0;
+  font-family: var(--font-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 code {

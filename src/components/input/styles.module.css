@@ -1,0 +1,28 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.input {
+    width: 280px;
+    padding: 16px;
+    border: none;
+    border-radius: 5px;
+    color: var(--text-secondary);
+    background-color: var(--white);
+    border: 1px solid transparent;
+}
+.input:focus-visible, .input:hover {
+    outline: none;
+    border-color: #BDBDBD;
+}
+.input.error {
+    border-color: var(--red-secondary);
+}
+.container span.error {
+    font-size: 12px;
+    font-weight: 400;
+    margin: 8px 0;
+    color: var(--red-secondary);
+}

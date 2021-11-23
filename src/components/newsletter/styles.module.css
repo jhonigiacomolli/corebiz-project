@@ -1,0 +1,24 @@
+.container {
+    height: 146px;
+    padding: 24px 0 36px 0  ;
+    background-color: #F2F2F2;
+}
+.title {
+    text-align: center;
+    line-height: 22px;
+    font-size: 22px;
+    font-weight: 700;
+    font-family: var(--font-secondary);
+}
+.content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 8px;
+}
+.button {
+    height: 48px;
+}
+.error {
+    background-color: #333333;
+}
