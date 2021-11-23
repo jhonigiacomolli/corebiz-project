@@ -6,9 +6,9 @@ type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
     kind: 'primary' | 'secondary'
     icon: FunctionComponent
 }
-export const Button = ({ text, icon: Icon, kind = 'primary', ...rest }:ButtonProps) => {
+export const Button = ({ text, icon: Icon, kind = 'primary', className = '', ...rest }:ButtonProps) => {
     return (
-        <button className={`${styles.button} ${styles[kind]}`} { ...rest }>
+        <button className={`${styles.button} ${styles[kind]} ${className}`} { ...rest }>
             <div>
                 <Icon />
             </div>

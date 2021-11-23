@@ -6,7 +6,7 @@ export const Slide = () => {
     return (
         <div className={styles.slide}>
             <div className={styles.background}>
-                <div>
+                <div className={styles.overlay}>
                     <Cover preserveAspectRatio='none' />
                 </div>
                 <img src={image} alt="slide" />

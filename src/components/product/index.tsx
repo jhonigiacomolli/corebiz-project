@@ -29,7 +29,7 @@ export const Product = ({ data }:ProductProps) => {
                     <span className={styles.off}>OFF</span>
                 )
             }
-            <img src={imageUrl} alt={productName} width={216} height={200} />
+            <img className={styles.image} src={imageUrl} alt={productName} />
             <div className={styles.content}>
                 <h3 className={styles.title}>
                     {productName}

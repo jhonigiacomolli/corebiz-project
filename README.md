@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Corebiz. Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![JG - Coding Logo](src/assets/logo.svg)
 
 ## Available Scripts
 

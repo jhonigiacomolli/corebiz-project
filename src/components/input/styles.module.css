@@ -26,3 +26,13 @@
     margin: 8px 0;
     color: var(--red-secondary);
 }
+@media(max-width: 991px) {
+    .container {
+        width: 100%;
+    }
+    .input {
+        width: 100%;
+        min-width: 288px;
+        box-sizing: border-box;
+    }
+}

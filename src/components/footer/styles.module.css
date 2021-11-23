@@ -52,3 +52,19 @@
 .logo path {
     fill: var(--white) !important;
 }
+@media(max-width: 991px) {
+    .content {
+        flex-direction: column;
+        height: auto;
+        padding: 27px 16px 10px 16px ;
+    }
+    .location, .contact, .sponsors {
+        width: 100%;
+    }
+    .contact {
+        margin: 30px 0 20px 0;
+    }
+    .sponsors {
+        justify-content: space-around;
+    }
+}

@@ -26,7 +26,7 @@ export const ShowCase = () => {
                     Mais Vendidos
                 </h2>
                 <div className={styles.productsContainer}>
-                    <ArrowLeft />
+                    <ArrowLeft className={styles.arrow}/>
                     <div className={styles.products}>
                         {
                             products.map(product => (
@@ -34,7 +34,13 @@ export const ShowCase = () => {
                             ))
                         }
                     </div>
-                    <ArrowRight />
+                    <ArrowRight className={styles.arrow} />
+                </div>
+                <div className={styles.slider}>
+                    <span className={styles.active}></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
             </div>
         </section>

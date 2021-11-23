@@ -7,7 +7,7 @@
     align-items: center;
     justify-content: space-between;
 }
-.background svg {
+.overlay svg{
     position: relative;
     width: 50.5vw;
     margin-top: 6px;
@@ -67,4 +67,48 @@
 }
 .slider span:hover {
     transform: scale(1.3);
+}
+
+@media(max-width:991px) {
+    .background {
+        height: 191px;
+        margin: 0;
+    }
+    .background img {
+        width: 100%;
+        height: 191px;
+        object-fit: cover;
+    }
+    .content {
+        height: 191px;
+    }
+    .overlay {
+        width: 100vw;
+        height: 191px;
+        margin: 0;
+        position: absolute;
+        z-index: 9;
+        background-color: rgba(0, 0, 0, 0.55);
+    }
+    .overlay svg {
+        display: none;
+    }
+    .centerContent {
+        padding: 0 20px;
+        height: 191px;
+        
+        margin: -13px 0 13px 0;
+    }
+    .centerContent h1 {
+        font-size: 20px;
+        line-height: 20px;
+    }
+    .centerContent h2 {
+        font-size: 30px;
+        line-height: 30px;
+    }
+    .slider {
+        margin: -26px 0 13px 0;
+        padding: 0 0 13px 0;
+    }
 }

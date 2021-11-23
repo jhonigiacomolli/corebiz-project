@@ -48,3 +48,20 @@
 .error {
     background-color: #333333;
 }
+@media(max-width: 991px) {
+    .container {
+        padding: 16px;
+        min-height: 276px;
+    }
+    .title {
+        text-align: left;
+        font-size: 21px;
+        font-weight: 700;
+    }
+    .content {
+        flex-direction: column;
+    }
+    .button {
+        width: 100%;
+    }
+}

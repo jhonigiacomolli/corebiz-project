@@ -5,9 +5,9 @@ import styles from './styles.module.css'
 type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
     quantity: number
 }
-export const MiniCart = ({ quantity = 0, ...rest }:ButtonProps) => {
+export const MiniCart = ({ quantity = 0, className = '', ...rest }:ButtonProps) => {
     return (
-        <button className={styles.container}  { ...rest }>
+        <button className={`${styles.container} ${className}`}  { ...rest }>
             <Cart />
             <span className={styles.quantity}>
                 { quantity }

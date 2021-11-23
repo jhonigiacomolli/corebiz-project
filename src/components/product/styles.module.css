@@ -2,6 +2,7 @@
     display: grid;
     width: 100%;
     max-width: 216px;
+    contain: content;
 }
 .off {
     display: flex;
@@ -17,6 +18,10 @@
     line-height: 21px;
     color: var(--white);
     border-color: var(--red) var(--red) transparent transparent;
+}
+.image {
+    width: 216px;
+    height: 200px;
 }
 .content {
     display: grid;
@@ -73,4 +78,38 @@
 }
 .container:hover .content {
     background-color: #E6E8EA;
+}
+@media(max-width: 776px) {
+    .container {
+        max-width: 140px;
+    }
+    .off {
+        border: 30px solid;
+        margin-left: 80px;
+        font-size: 10px;
+        font-weight: 400;
+        line-height: 21px;
+        color: var(--white);
+        border-color: var(--red) var(--red) transparent transparent;
+    }
+    .image {
+        width: 140px;
+        height: 122px;
+    }
+    .title {
+        font-size: 10px;
+    }
+    .listPrice {
+        font-size: 11px;
+    }
+    .price {
+        font-size: 16px;
+    }
+    .installments p {
+        font-size: 11px;
+    }
+    .button {
+        opacity: 1;
+        padding: 9px;
+    }
 }

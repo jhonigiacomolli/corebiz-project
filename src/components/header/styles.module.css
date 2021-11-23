@@ -2,7 +2,49 @@
     display: grid;
     grid-template-columns: auto 1fr auto auto;
     grid-template-rows: 80px;
+    grid-template-areas: "logo search account cart";
     align-items: center;
+    justify-content: space-between;
     max-width: var(--boxed-size);
     margin: 0 auto;
+}
+.logo {
+    grid-area: logo;
+    height: 25px;
+}
+.search {
+    grid-area: search;
+}
+.account {
+    grid-area: account;
+}
+.cart {
+    grid-area: cart;
+}
+.toggle {
+    display: none;
+    grid-area: toggle;
+}
+@media(max-width: 991px) {
+    .header {
+        grid-template-columns: auto auto;
+        grid-template-rows: 40px 40px;
+        grid-template-areas: 
+        "toggle logo cart"
+        "search search search"
+        ;
+        padding: 5px 20px;
+    }
+    .account {
+        display: none;
+    }
+    .toggle {
+        display: flex;
+    }
+    .search input {
+        margin: 0;
+    }
+    .search svg {
+        margin: 0 0 0 -23px;
+    }
 }
