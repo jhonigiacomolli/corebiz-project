@@ -18,14 +18,12 @@ export const ShowCase = () => {
 
         setProducts(data ? data : [])
     }
-
-    console.log(products);
     
     return (
         <section>
             <div className={styles.content}> 
                 <h2 className={styles.title}>
-                    Mais vendidos
+                    Mais Vendidos
                 </h2>
                 <div className={styles.productsContainer}>
                     <ArrowLeft />

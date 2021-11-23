@@ -4,12 +4,14 @@ import { CurrencyFormat } from 'components/global/functions'
 import { Type_Product } from 'components/global/types'
 import { SimpleButton } from 'components/button'
 import styles from './styles.module.css'
+import { useCart } from 'components/hooks/cart'
 
 type ProductProps = {
     data: Type_Product
 }
 
 export const Product = ({ data }:ProductProps) => {
+    const { updateCart } = useCart()
     const { 
         productName,
         stars,
@@ -54,7 +56,7 @@ export const Product = ({ data }:ProductProps) => {
                         ))
                     }
                 </div>
-                <SimpleButton className={styles.button} >
+                <SimpleButton className={styles.button} onClick={() => updateCart(1)} >
                     Comprar
                 </SimpleButton>
             </div>

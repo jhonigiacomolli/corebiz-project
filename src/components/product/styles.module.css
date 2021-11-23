@@ -21,7 +21,8 @@
 .content {
     display: grid;
     grid-template-rows: auto auto 30px auto 25px 35px;
-    align-items: flex-start;
+    grid-template-columns: 1fr;
+    align-items: center;
     justify-content: center;
     padding: 15px;
     transition: 0.4s;
@@ -31,15 +32,18 @@
     font-size: 12px;
     line-height: 16.4px;
     margin: 0;
+    text-align: center;
     color: var(--text-primary);
 }
-
+.ratio {
+    margin: 0 auto;
+}
 .listPrice {
     font-weight: 400;
     font-size: 12px;
     font-weight: 16.4px;
-    margin: 0;
     text-decoration: line-through;
+    text-align: center;
     color: var(--text-primary);
 }
 .price {
@@ -47,6 +51,7 @@
     font-size: 18px;
     line-height: 24.5px;
     margin: -5px;
+    text-align: center;
     color: var(--black);
 }
 .installments p {
@@ -54,12 +59,14 @@
     font-size: 11px;
     line-height: 15px;
     margin: 5px 0 10px 0;
+    text-align: center;
     color: var(--text-primary);
 }
 .button {
     opacity: 0;
     width: 125px;
     transition: 0.4s;
+    margin: 0 auto;
 }
 .container:hover .button {
     opacity: 1;

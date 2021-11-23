@@ -1,20 +1,17 @@
 import { Footer } from "components/footer";
 import { Header } from "components/header";
-import { Newsletter } from "components/newsletter";
-import { ShowCase } from "components/show-case";
-import { Slide } from "components/slide-show/slide";
+import { CartContextProvider } from "components/hooks/cart";
+import { Main } from "components/main";
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <main>
-        <Slide />
-        <ShowCase />
-        <Newsletter />
-      </main>
-      <Footer />
-    </div>
+    <CartContextProvider>
+      <div className="App">
+        <Header />
+        <Main />
+        <Footer />
+      </div>
+    </CartContextProvider>
   );
 }
 
