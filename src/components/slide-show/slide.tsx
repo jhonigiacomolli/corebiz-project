@@ -6,7 +6,9 @@ export const Slide = () => {
     return (
         <div className={styles.slide}>
             <div className={styles.background}>
-                <Cover />
+                <div>
+                    <Cover preserveAspectRatio='none' />
+                </div>
                 <img src={image} alt="slide" />
             </div>
             <div className={styles.content}>

@@ -1,0 +1,69 @@
+.container {
+    display: grid;
+    width: 100%;
+    max-width: 216px;
+}
+.off {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    width: 0;
+    height: 0;
+    position: absolute;
+    border: 40px solid;
+    margin-left: 115px;
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 21px;
+    color: var(--white);
+    border-color: var(--red) var(--red) transparent transparent;
+}
+.content {
+    display: grid;
+    grid-template-rows: auto auto 30px auto 25px 35px;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 15px;
+    transition: 0.4s;
+}
+.title {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16.4px;
+    margin: 0;
+    color: var(--text-primary);
+}
+
+.listPrice {
+    font-weight: 400;
+    font-size: 12px;
+    font-weight: 16.4px;
+    margin: 0;
+    text-decoration: line-through;
+    color: var(--text-primary);
+}
+.price {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24.5px;
+    margin: -5px;
+    color: var(--black);
+}
+.installments p {
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 15px;
+    margin: 5px 0 10px 0;
+    color: var(--text-primary);
+}
+.button {
+    opacity: 0;
+    width: 125px;
+    transition: 0.4s;
+}
+.container:hover .button {
+    opacity: 1;
+}
+.container:hover .content {
+    background-color: #E6E8EA;
+}

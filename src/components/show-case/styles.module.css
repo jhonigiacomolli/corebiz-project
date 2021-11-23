@@ -1,0 +1,32 @@
+.content {
+    max-width: var(--boxed-size);
+    margin: 0 auto;
+}
+.title {
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 28px;
+}
+.title::after {
+    content: '';
+    position: relative;
+    display: block;
+    width: 65px;
+    height: 5px;
+    margin: 6px 0;
+    background-color: #C0C0C0;
+}
+.productsContainer {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin: 0 -25px;
+}
+.products {
+    display: flex;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    overflow: hidden;
+    gap: 100px;
+    margin-bottom: 70px;
+}

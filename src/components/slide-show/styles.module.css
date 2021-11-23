@@ -1,15 +1,18 @@
 .slide {
     contain: content;
+    overflow: hidden;
 }
 .background {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 .background svg {
-    margin: 0 -160px;
     position: relative;
-    z-index: 19;
+    /* z-index: 1; */
+    width: 50vw;
+    margin-top: 5px;
+    margin-right: -70px;
 }
 .content {
     position: absolute;
