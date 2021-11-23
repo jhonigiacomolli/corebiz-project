@@ -51,7 +51,7 @@
 @media(max-width: 991px) {
     .container {
         padding: 16px;
-        min-height: 276px;
+        min-height: 296px;
     }
     .title {
         text-align: left;

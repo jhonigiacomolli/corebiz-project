@@ -18,10 +18,10 @@ export const Slide = () => {
                 </div>
             </div>
             <div className={styles.slider}>
-                <span className={styles.active}></span>
-                <span></span>
-                <span></span>
-                <span></span>
+                <span className={styles.active} />
+                <span />
+                <span />
+                <span />
             </div>
         </div>
     )

@@ -19,8 +19,16 @@ export const Footer = () => {
                     <p>+55 11 3090 1039</p>
                 </div>
                 <div className={styles.contact}>
-                    <Button text="Entre em contato" kind="secondary" icon={MailIcon} />
-                    <Button text="Fale com nosso consultor online" kind="secondary" icon={HeadsetIcon} />
+                    <Button 
+                        text="Entre em contato" 
+                        kind="secondary" 
+                        icon={MailIcon} 
+                    />
+                    <Button 
+                        text="Fale com nosso consultor online" 
+                        kind="secondary" 
+                        icon={HeadsetIcon} 
+                    />
                 </div>
                 <div className={styles.sponsors}>
                     <div className={styles.sponsor}>

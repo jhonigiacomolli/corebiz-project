@@ -8,8 +8,12 @@ export const NewsLetterMessage = ({ updateState }: NewsLetterMessageProps) => {
     return (
         <div className={styles.container} >
             <div className={styles.message}>
-                <h2>Seu e-mail foi cadastrado com sucesso!</h2>
-                <p>A partir de agora você receberá as novidades e ofertas exclusivas</p>
+                <h2>
+                    Seu e-mail foi cadastrado com sucesso!
+                </h2>
+                <p>
+                    A partir de agora você receberá as novidades e ofertas exclusivas
+                </p>
                 <SimpleButton className={styles.button} onClick={() => updateState(true)}>
                     Cadastrar novo e-mail
                 </SimpleButton>

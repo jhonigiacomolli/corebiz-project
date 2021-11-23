@@ -14,8 +14,16 @@ export const Header = () => {
             <ToggleMenu className={styles.toggle}/>
             <Logo className={styles.logo} />
             <SearchBar className={styles.search} />
-            <Button className={styles.account} text='Minha Conta' kind='primary' icon={UserIcon} />
-            <MiniCart className={styles.cart} quantity={quantity} />
+            <Button 
+                className={styles.account} 
+                text='Minha Conta' 
+                kind='primary' 
+                icon={UserIcon} 
+            />
+            <MiniCart 
+                className={styles.cart} 
+                quantity={quantity} 
+            />
         </header>
 
     )

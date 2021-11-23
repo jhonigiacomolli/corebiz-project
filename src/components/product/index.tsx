@@ -26,10 +26,16 @@ export const Product = ({ data }:ProductProps) => {
         <div className={styles.container}>
             {
                 listPrice && (
-                    <span className={styles.off}>OFF</span>
+                    <span className={styles.off}>
+                        OFF
+                    </span>
                 )
             }
-            <img className={styles.image} src={imageUrl} alt={productName} />
+            <img 
+                className={styles.image} 
+                src={imageUrl} 
+                alt={productName} 
+            />
             <div className={styles.content}>
                 <h3 className={styles.title}>
                     {productName}

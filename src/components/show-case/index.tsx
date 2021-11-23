@@ -30,7 +30,10 @@ export const ShowCase = () => {
                     <div className={styles.products}>
                         {
                             products.map(product => (
-                                <Product key={product.productId} data={product} />
+                                <Product 
+                                    key={product.productId} 
+                                    data={product} 
+                                />
                             ))
                         }
                     </div>
