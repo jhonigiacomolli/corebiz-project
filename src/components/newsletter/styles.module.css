@@ -16,6 +16,32 @@
     justify-content: center;
     gap: 8px;
 }
+.message {
+    display: flex;
+    flex-direction:  column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.message h2 {
+    margin: 0;
+    font-family: var(--font-secondary);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 14px;
+}
+.message .button {
+    width: 328px;
+    height: 48px;
+    margin: 15px;
+}
+.message p {
+    margin: 0;
+    font-family: var(--font-secondary);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+}
 .button {
     height: 48px;
 }
