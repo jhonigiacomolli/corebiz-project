@@ -1,0 +1,54 @@
+.footer {
+    background-color: var(--black);
+}
+.location p {
+    font-size: 13px;
+    line-height: 12px;
+    font-weight: 400;
+}
+.title {
+    font-size: 20px;
+    font-weight: 700;
+}
+.title::after {
+    content: '';
+    display: block;
+    position: relative;
+    width: 45px;
+    height: 5px;
+    margin: 21px 0;
+    background-color: var(--white);
+}
+.content {
+    height: 213px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    color: var(--white);
+    max-width: var(--boxed-size);
+}
+.contact {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.sponsors {
+    display: flex;
+    gap: 25px;
+}
+.sponsor {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-size: 10.6px;
+}
+.logo {
+    width: 76px;
+    height: 18px;
+}
+.logo path {
+    fill: var(--white) !important;
+}

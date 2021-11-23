@@ -1,0 +1,16 @@
+.container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.container input {
+    margin: 0 0 0 43px;
+    width: 100%;
+    padding: 10px 0;
+    margin-left: 60px;
+    border: none;
+    border-bottom: 1px solid var(--text-primary);
+}
+.container svg {
+    margin: 0 43px 0 -22px;
+}
