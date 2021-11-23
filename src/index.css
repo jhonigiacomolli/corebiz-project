@@ -11,6 +11,7 @@ body {
   --red-secondary: #D7182A; 
   --text-primary: #7A7A7A;
   --text-secondary: #585858;
+  --text-tertiary: #DBDBDB;
  
   margin: 0;
   font-family: var(--font-primary);
